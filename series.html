@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Series</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -42,6 +43,16 @@
                 <td>A young boy becomes a demon slayer to avenge his family.</td>
             </tr>
         </table>
+        <div id="animeList">
+            <button onclick="loadContent('one_punch_man')">One Punch Man</button>
+            <button onclick="loadContent('dragon_ball_z')">Dragon Ball Z</button>
+            <button onclick="loadContent('death_note')">Death Note</button>
+            <button onclick="loadContent('demon_slayer')">Demon Slayer</button>
+            <button id="toggleDarkMode">Toggle Dark Mode</button>
+        
+        </div>
+        
+<div id="animeContent"></div>
     </main>
     <footer>
         <p>&copy; 2024 Anime World. All rights reserved.</p>
