@@ -173,12 +173,12 @@ form {
 
 
 /* Clearfix */
-.cf:before,
-.cf:after {
+.contactForm:before,
+.contactForm:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
 
-.cf:after {
+.contactForm:after {
     clear: both;
 }

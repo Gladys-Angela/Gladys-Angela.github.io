@@ -1,17 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('contactForm').addEventListener('submit', function (e) {
-        let name = document.getElementById('name').value;
-        let email = document.getElementById('email').value;
-        let message = document.getElementById('message').value;
+        e.preventDefault(); // Prevent form submission
 
-        if (name === '' || email === '' || message === '') {
+        // Fetch form values
+        let Name = document.getElementById('input-name').value.trim();
+        let Email = document.getElementById('input-email').value.trim();
+        let Message = document.getElementById('input-message').value.trim();
+        let Subject = document.getElementById('input-subject').value.trim();
+
+        // Check if any field is empty
+        if (Name === '' || Email === '' || Subject === '' || Message === '') {
             alert('Please fill out all fields.');
-            e.preventDefault();
         } else {
+            // Submit the form if all fields are filled
             alert('Form submitted successfully.');
+            this.submit(); // Submit the form
         }
     });
-}); 
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     let currentImageIndex = 0;
