@@ -27,32 +27,34 @@
                 <th>Description</th>
             </tr>
             <tr>
-                <td>One Punch Man</td>
+                <td id="animelist" onclick="loadContent('one_punch_man')">One Punch Man</td>
                 <td>A hero who can defeat any opponent with a single punch.</td>
             </tr>
             <tr>
-                <td>Dragon Ball Z</td>
+                <td id="animelist" onclick="loadContent('dragon_ball_z')">Dragon Ball Z</td>
                 <td>The adventures of Goku as he defends Earth from villains.</td>
             </tr>
             <tr>
-                <td>Death Note</td>
+                <td id="animelist" onclick="loadContent('death_note')">Death Note</td>
                 <td>A high school student discovers a notebook that allows him to kill anyone.</td>
             </tr>
             <tr>
-                <td>Demon Slayer</td>
+                <td id="animelist" onclick="loadContent('demon_slayer')">Demon Slayer</td>
                 <td>A young boy becomes a demon slayer to avenge his family.</td>
             </tr>
         </table>
-        <div id="animeList">
+        <!-- <div id="animeList">
             <button onclick="loadContent('one_punch_man')">One Punch Man</button>
             <button onclick="loadContent('dragon_ball_z')">Dragon Ball Z</button>
             <button onclick="loadContent('death_note')">Death Note</button>
             <button onclick="loadContent('demon_slayer')">Demon Slayer</button>
             <button id="toggleDarkMode">Toggle Dark Mode</button>
         
-        </div>
+        </div> -->
         
-<div id="animeContent"></div>
+<div id="animeContent"> 
+    <button id="toggleDarkMode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</div>
     </main>
     <footer>
         <p>&copy; 2024 Anime World. All rights reserved.</p>
