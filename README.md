@@ -1,2 +1,2 @@
-﻿# Group-22.github.io
+﻿# Gladys-Angela.github.io
 Assignment 2
